@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/button.js"></script>
     <title>
         Ethan Newman's Personal Site
     </title>
@@ -13,13 +14,75 @@
 <body>
 
 <!--Banner image with text on top-->
-<div class="hero-image">
+<section class="hero-image">
     <div class="hero-text">
-        <h1>I am Ethan Newman</h1>
-        <p>And I'm a Computer Science Student</p>
-        <button class="button">Contact me</button>
+        <h1>I'm Ethan Newman</h1>
+        <p>I'm a computer science student</p>
+        <button class="white-button" onclick="document.getElementById('contactForm').style.display='block'">Contact me</button>
     </div>
-</div>>
+</section>
+
+<!--Under banner, says that webpage is still in progress-->
+<section id="coming-soon">
+    <div id="coming-soon-text">
+        <h2>
+            This webpage is a work in progress.
+            More coming soon!
+        </h2>
+    </div>
+</section>
+
+
+
+<!--Contact me form-->
+<div id="contactForm" class="modal">
+    
+
+    <!--Modal Content-->
+    <form class="modal-content animate" action="/action_page.php">
+        <!--The x-->
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('contactForm').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+        </div>
+
+        
+
+        <div class="container">
+            
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter your first and last name" name="name" required>
+            
+            <label for="email"><b>Email Address</b></label>
+            <input type="text" placeholder="Enter email address" name="email" required>
+
+            <label id="message-label"><b>Message</b></label>
+            <textarea id="message-contents" placeholder="Enter your message" required></textarea>
+
+            
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <!--might want to delete the class from this one-->
+            <button type="button" class="no-button" 
+            onclick="document.getElementById('contactForm').style.display='none'">Cancel</button>
+            <button type="submit" class="yes-button" onclick="sendMail(); return false">Submit</button>
+        </div>
+    </form>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('contactForm');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
+    </script>
+
 
 </body>
 </html>

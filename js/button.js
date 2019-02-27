@@ -6,4 +6,5 @@ function sendMail() {
     ;
 
     window.location.href = link;
+    document.getElementById('contactForm').style.display='none'
 }

@@ -3,6 +3,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h1
@@ -17,13 +18,30 @@ textarea
 }
 /* hero image*/
 /* The hero image */
+.navigation-bar
+{
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+.header-navigation
+{
+    position: absolute;
+    right: 20px;
+    top: 5%
+}
+
 .hero-image {
     
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn-images-1.medium.com/max/2600/1*VibJsLuJ_WJFRn45mCwytA.jpeg");
   
     /* Set a specific height */
-    height: 50%;
+    height: 70%;
     /*min-height: 320px;*/
 
     /* Position and center the image to scale nicely on all screens */
@@ -45,20 +63,20 @@ textarea
   }
 
 
-#coming-soon
+.gray
 {
     background-color: rgb(221, 221, 221);
     background-position: center;
     background-size: cover;
     color: black;
     position: relative;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     /* Set a specific height */
 
-    height: 50%;
+    height: 40%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -67,7 +85,19 @@ textarea
     position: relative;
 }
 
-#coming-soon-text
+.gray h2
+{
+    font-size: 40px;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: lighter;
+}
+.gray p
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.gray-text
 {
     text-align: center;
     position: absolute;
@@ -116,7 +146,7 @@ textarea
 .no-button
 {
     background-color: rgb(15, 15, 15);
-    border: none;
+    border: 2px solid #000;
     color: white;
     padding: 15px 32px;
     text-align: center;

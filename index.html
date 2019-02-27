@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--viewport so it adjusts to device width-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|EB+Garamond|Raleway" rel="stylesheet">
     <script type="text/javascript" src="js/button.js"></script>
     <title>
         Ethan Newman's Personal Site
@@ -13,22 +15,36 @@
 
 <body>
 
+
+
 <!--Banner image with text on top-->
-<section class="hero-image">
+<section class="hero-image" id="home">
+    <!-- <header class="header-top"> -->
+        <nav class="header-navigation">
+            <a href="#home" class="navigation-bar">Home</a>
+            <a href="#webdev" class="navigation-bar">Web Development</a>
+            <a data-toggle="modal" href="#contactForm" class="navigation-bar">Contact me</a>
+            
+        </nav>
+    <!-- </header> -->
+
     <div class="hero-text">
-        <h1>I'm Ethan Newman</h1>
-        <p>I'm a computer science student</p>
+        <p><i>Hello, I'm</i></p>
+        <h1>Ethan Newman</h1>
         <button class="white-button" onclick="document.getElementById('contactForm').style.display='block'">Contact me</button>
     </div>
 </section>
 
 <!--Under banner, says that webpage is still in progress-->
-<section id="coming-soon">
-    <div id="coming-soon-text">
+<section class="gray" id="webdev">
+    <div class="gray-text">
         <h2>
-            This webpage is a work in progress.
-            More coming soon!
+            Web Development
         </h2>
+        <p>
+            You need a beautiful, inexpensive website. I create it. If you want to look into
+            working with me, click the "Contact Me" button above.
+        </p>
     </div>
 </section>
 
@@ -59,7 +75,7 @@
 
             <label id="message-label"><b>Message</b></label>
             <textarea id="message-contents" placeholder="Enter your message" required></textarea>
-
+            <p>If the email for doesn't work for you, send your email directly to ethan.newman@utdallas.edu</p>
             
         </div>
 

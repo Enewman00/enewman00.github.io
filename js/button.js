@@ -4,7 +4,7 @@ function sendMail() {
              + "&subject=" + escape("Contact from personal site")
              + "&body=" + escape(document.getElementById('message-contents').value)
     ;
-
-    window.location.href = link;
-    document.getElementById('contactForm').style.display='none'
+    window.open(link);
+    //window.location.href = link;
+    //document.getElementById('contactForm').style.display='none'
 }

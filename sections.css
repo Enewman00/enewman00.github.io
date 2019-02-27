@@ -1,5 +1,6 @@
 .gray
 {
+    min-height: 400px;
     background-color: rgb(230, 230, 230);
     background-position: center;
     background-size: cover;
@@ -18,6 +19,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .gray h2
@@ -44,6 +46,7 @@
 
 .white
 {
+    min-height: 400px;
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-size: cover;
@@ -62,6 +65,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .white h2
@@ -88,5 +92,5 @@
 
 #about-me
 {
-    height: 45%;
+    height: 50%;
 }

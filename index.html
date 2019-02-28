@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sections.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|EB+Garamond|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro|Playfair+Display" rel="stylesheet">
     <script type="text/javascript" src="js/button.js"></script>
     <title>
         Ethan Newman's Personal Site
@@ -26,7 +26,7 @@
             <a href="#home" class="navigation-bar">Home</a>
             <a href="#webdev" class="navigation-bar">Web Development</a>
             <a href="#about-me" class="navigation-bar">About Me</a>
-            <a onclick="document.getElementById('contactForm').style.display='block'" class="navigation-bar" href="#contact-me">
+            <a class="navigation-bar" href="#contact-me">
                 Contact me
             </a>
             
@@ -36,8 +36,9 @@
     <div class="hero-text">
         <p><i>Hello, I'm</i></p>
         <h1>Ethan Newman</h1>
-        <button class="white-button" onclick="document.getElementById('contactForm').style.display='block'">Contact me</button>
+        <a class="white-button" href="#contact-me">Contact me</a>
     </div>
+    
 </section>
 
 <!--Under banner, Gives info about my web dev-->
@@ -73,7 +74,7 @@
 
 <!--contact me-->
 <section class="gray" id="contact-me">
-    <div class="gray-text">
+    <div class="gray-text" id="contact-me-text">
         <h2>
             Get In Touch
         </h2>
@@ -133,6 +134,7 @@
         }
     }
     </script>
+
 
 
 </body>

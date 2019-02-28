@@ -29,8 +29,10 @@
     }
     .header-navigation a.icon
     {
+        position: relative;
         float: right;
         display: block;
+        top: 16px;
     }
 }
 @media screen and (max-width: 600px)
@@ -41,6 +43,7 @@
     }
     .header-navigation.responsive .icon
     {
+        display: block;
         position: absolute;
         right: 0;
         top: 0;

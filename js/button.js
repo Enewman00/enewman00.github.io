@@ -1,5 +1,3 @@
-
-
 function navigationBar()
 {
     var bar = document.getElementById("top-navigation");

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sections.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/button.js"></script>
     <title>
         Ethan Newman's Personal Site
@@ -22,12 +23,13 @@
 <!--Banner image with text on top-->
 <section class="hero-image" id="home">
     <!-- <header class="header-top"> -->
-        <nav class="header-navigation">
-            <a href="#home" class="navigation-bar">Home</a>
+        <nav class="header-navigation" id="top-navigation">
+            <!-- <a href="#home" class="navigation-bar">Home</a> -->
             <a href="#webdev" class="navigation-bar">Web Development</a>
             <a href="#about-me" class="navigation-bar">About Me</a>
-            <a class="navigation-bar" href="#contact-me">
-                Contact me
+            <a href="#contact-me" class="navigation-bar">Contact me</a>
+            <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
+                <i class="fa fa-bars"></i>
             </a>
             
         </nav>
@@ -84,45 +86,6 @@
     </div>
 </section>
 
-
-<!--Contact me form-->
-<div id="contactForm" class="modal">
-    
-
-    <!--Modal Content-->
-    <form class="modal-content animate" action="/action_page.php">
-        <!--The x-->
-        
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('contactForm').style.display='none'"
-            class="close" title="Close Modal">&times;</span>
-        </div>
-
-        
-
-        <div class="container">
-            
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter your first and last name" name="name" required>
-            
-            <label for="email"><b>Email Address</b></label>
-            <input type="text" placeholder="Enter email address" name="email" required>
-
-            <label id="message-label"><b>Message</b></label>
-            <textarea name="message" id="message-contents" placeholder="Enter your message" required></textarea>
-            <p>If this does not open your email client, send your email directly to 
-                <b>ethan.newman@utdallas.edu</b></p>
-            
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <!--might want to delete the class from this one-->
-            <button type="button" class="no-button" 
-            onclick="document.getElementById('contactForm').style.display='none'">Cancel</button>
-            <button type="submit" class="yes-button" onclick="sendMail(); return false">Submit</button>
-        </div>
-    </form>
-</div>
 <script>
     // Get the modal
     var modal = document.getElementById('contactForm');

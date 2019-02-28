@@ -8,11 +8,50 @@
     font-weight: bold;
     justify-content: flex-end;
 }
+
+.header-navigation .icon
+{
+    color: white;
+    display: none;
+}
+
 .header-navigation
 {
     position: absolute;
     right: 20px;
     top: 5%
+}
+@media screen and (max-width: 600px)
+{
+    .header-navigation a
+    {
+        display: none;
+    }
+    .header-navigation a.icon
+    {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .header-navigation.responsive
+    {
+        position: relative;
+    }
+    .header-navigation.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header-navigation.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 50px;
+    }
 }
 
 .hero-image

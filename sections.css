@@ -21,6 +21,50 @@
     right: 20px;
     top: 5%
 }
+
+/* development div stack elements */
+@media screen and (max-width: 750px)
+{
+    #webdev
+    {
+        top: 70% !important;
+        height: 140% !important;
+    }
+    .gray-web
+    {
+        /* margin-right: 2%;
+        margin-left: 2%; */
+        float: none !important;
+        width: auto !important;
+    }
+
+
+    .gray-app
+    {
+        width: auto !important;
+        float: none !important;
+        /* margin-left: 2%;
+        margin-right: 2%; */
+    }
+
+    .gray-other
+    {
+        float: none !important;
+        width: auto !important;
+        /* margin-right: 2%;
+        margin-left: 2%; */
+    }
+}
+/* about me gets taller when view is short on width */
+@media screen and (max-width: 650px)
+{
+    #about-me
+    {
+        overflow: show !important;
+        min-height: 600px !important;
+
+    }
+}
 @media screen and (max-width: 600px)
 {
     .header-navigation a
@@ -188,18 +232,67 @@
 
 #about-me
 {
-    min-height: 600px;
+    min-height: 500px;
     height: 50%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 #webdev
 {
-    min-height: 500px;
+    top: 30%;
+    min-height: 600px;
     margin-bottom: 50px;
+    height: 60%;
 }
 
 #contact-me
 {
     min-height: 400px;
+}
+
+.gray-web
+{
+    margin-right: 2%;
+    margin-left: 2%;
+    float: left;
+    width: 29%;
+}
+
+
+.gray-app
+{
+    width: 29%;
+    float:left;
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.gray-other
+{
+    float: left;
+    width: 29%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.gray-text
+{
+    width: 90%;
+}
+
+.gray-text h4
+{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#webdev p
+{
+    font-size: 1.4em;
+}
+
+.mouse-image
+{
+    top: -5%;
 }

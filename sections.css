@@ -25,17 +25,8 @@
 /* development div stack elements */
 @media screen and (max-width: 750px)
 {
-    #webdev
-    {
-        height: 1100px !important;
-        min-height: 1100px;
-        /* top: 85% !important; */
-        /* height: s170% !important; */
-    }
     .gray-web
     {
-        /* margin-right: 2%;
-        margin-left: 2%; */
         float: none !important;
         width: auto !important;
     }
@@ -45,41 +36,15 @@
     {
         width: auto !important;
         float: none !important;
-        /* margin-left: 2%;
-        margin-right: 2%; */
     }
 
     .gray-other
     {
         float: none !important;
         width: auto !important;
-        /* margin-right: 2%;
-        margin-left: 2%; */
     }
 }
 
-/* about me gets taller when view is short on width */
-@media screen and (max-width: 650px)
-{
-    #about-me
-    {
-        clear: both;
-        min-height: 900px !important;
-
-    }
-}
-/* skinny sceen makes webdev even taller */
-@media screen and (max-width: 500px)
-{
-    #about-me
-    {
-        min-height: 1000px !important;
-    }
-    #webdev
-    {
-        min-height: 1400px !important;
-    }
-}
 @media screen and (max-width: 600px)
 {
     .header-navigation a
@@ -125,7 +90,6 @@
   
     /* Set a specific height */
     height: 70%;
-    /*min-height: 320px;*/
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -152,15 +116,13 @@
     width: 100%;
     clear: both;
     float: left;
-    min-height: 400px;
     background-color: rgb(230, 230, 230);
     color: black;
     position: relative;
-
-
+    
+    
     /* Set a specific height */
-
-    height: 40%;
+    height: auto;
 
     /* Position and center the image to scale nicely on all screens */
 
@@ -181,11 +143,8 @@
 }
 .gray-text
 {
+    
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: black;
 }
 
@@ -194,24 +153,15 @@
     width: 100%;
     clear: both;
     float: left;
-    min-height: 400px;
     
     background-color: rgb(255, 255, 255);
-
-
     color: black;
-
-    position: relative;
-
-
     /* Set a specific height */
 
-    height: 40%;
-
+    height: auto;
     /* Position and center the image to scale nicely on all screens */
     position: relative;
     overflow: hidden;
-    margin: 0px;
 }
 
 .white h2
@@ -228,34 +178,16 @@
 }
 .white-text
 {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: black;
-}
-
-#about-me
-{
-    clear: both;
-    float: left;
-    min-height: 700px;
-    height: 50%;
-    /* top: 100px; */
-}
-
-#webdev
-{
-    
-    min-height: 600px;
-    margin-bottom: 0px;
-    height: 60%;
 }
 
 #contact-me
 {
-    min-height: 400px;
+    /* min-height: 400px; */
 }
 
 .gray-web
@@ -286,7 +218,7 @@
 
 .gray-text
 {
-    width: 90%;
+    width: auto;
 }
 
 .gray-text h4

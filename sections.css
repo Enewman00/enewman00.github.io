@@ -55,12 +55,21 @@
         margin-left: 2%; */
     }
 }
+@media screen and (max-width: 500px)
+{
+    #webdev
+    {
+        top: 90% !important;
+        height: 180% !important;
+
+    }
+}
 /* about me gets taller when view is short on width */
 @media screen and (max-width: 650px)
 {
     #about-me
     {
-        overflow: show !important;
+        overflow: hidden !important;
         min-height: 600px !important;
 
     }

@@ -24,22 +24,7 @@ textarea
 
 
 
-/* Buttons that are a white and transparent */
-.white-button
-{
-    border: 2px solid #ffffff;
-    
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-}
+
 /* Buttons that are a "yes" option (submit, accept etc.) */
 .yes-button
 {
@@ -118,84 +103,91 @@ textarea
   cursor: pointer;
 }
 
-/* Add Zoom Animation */
-.animate
+@-webkit-keyframes contact-animation
 {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+    from
+    {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+    to
+    {
+        background-color: white;
+        color: black;
+    }
+}
+@-webkit-keyframes contact-animation-out
+{
+    from
+    {
+        background-color: white;
+        color: black;
+    }
+    to
+    {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
 }
 
-@-webkit-keyframes animatezoom
+
+@-webkit-keyframes nav-animation-in
 {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
+    from
+    {
+        color: white;
+    }
+    to
+    {
+        color: gray;
+    }
 }
-  
-@keyframes animatezoom
+@-webkit-keyframes nav-animation-out
 {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
+    from
+    {
+        color: gray;
+    }
+    to
+    {
+        color: white;
+    }
 }
 
-
-
-
-
-/* Bordered form */
-form
+#nav-dev:hover, #nav-contact:hover, #nav-about:hover
 {
-    border: 3px solid #f1f1f1;
+    color: gray;
+    -webkit-animation: nav-animation-in .2s;
 }
-  
-/* Full-width inputs */
-input[type=text], textarea
+
+#nav-dev, #nav-contact, #nav-about
 {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    color: white;
+    -webkit-animation: nav-animation-out .2s;
+}
+
+.white-button:hover
+{
+    background-color: white;
+    color: black;
+    -webkit-animation: contact-animation .3s;
+}
+
+/* Buttons that are a white and transparent */
+.white-button
+{
+    border: 2px solid #ffffff;
+    -webkit-animation: contact-animation-out .3s;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-textarea
-{
-    height: 100px;
-}
 
-
-/* Bordered form */
-form
-{
-    border: 3px solid #f1f1f1;
-}
-  
-/* Add a hover effect for buttons */
-button:hover
-{
-    opacity: 0.8;
-}
-
-/* Add padding to containers */
-.container
-{
-    padding: 16px;
-}
-  
-/* Center the image and position the close button */
-.imgcontainer
-{
-    position: relative;
-} 
-  
-  /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px)
-{
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-}

@@ -27,8 +27,11 @@
 {
     #webdev
     {
-        top: 85% !important;
-        height: 170% !important;
+        top: 700px !important;
+        height: 1400px !important;
+        min-height: 1400px;
+        /* top: 85% !important; */
+        /* height: s170% !important; */
     }
     .gray-web
     {
@@ -59,9 +62,12 @@
 {
     #webdev
     {
-        min-height: 180% !important;
-        top: 90% !important;
-        height: 180% !important;
+        min-height: 1400px !important;
+        
+        top: 700px !important;
+        /* top: 90% !important; */
+        height: 1400px !important;
+        /* height: 180% !important; */
 
     }
 }
@@ -243,14 +249,15 @@
 {
     min-height: 500px;
     height: 50%;
-    /* margin-top: 100px; */
+    /* top: 100px; */
+    margin-top: 64px;
 }
 
 #webdev
 {
     top: 30%;
     min-height: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     height: 60%;
 }
 

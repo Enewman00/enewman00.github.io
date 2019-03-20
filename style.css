@@ -190,8 +190,9 @@ textarea
 /* Buttons that are a white and transparent */
 .white-button
 {
-    position: relative;
-    top: 220px;
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* top: 220px; */
     border: 2px solid #ffffff;
     -webkit-animation: contact-animation-out .3s;
 
@@ -200,10 +201,20 @@ textarea
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+}
+
+.white-button-container
+{
+    top: 370px;
+    position: absolute;
+    float: left;
+    height: auto;
+    width: 100%;
+    text-align: center;
 }

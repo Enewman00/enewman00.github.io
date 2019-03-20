@@ -8,7 +8,9 @@ body, html {
 
 h1
 {
+    font-weight: lighter;
     font-size: 50px;
+    /* -webkit-animation: fade-in 5s; */
 }
 
 textarea
@@ -154,6 +156,18 @@ textarea
     }
 }
 
+@-webkit-keyframes fade-in
+{
+    from
+    {
+        color: rgba(255, 255, 255, 0);
+    }
+    to
+    {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
 #nav-dev:hover, #nav-contact:hover, #nav-about:hover
 {
     color: gray;
@@ -176,6 +190,8 @@ textarea
 /* Buttons that are a white and transparent */
 .white-button
 {
+    position: relative;
+    top: 250px;
     border: 2px solid #ffffff;
     -webkit-animation: contact-animation-out .3s;
 
@@ -189,5 +205,5 @@ textarea
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
 }
-

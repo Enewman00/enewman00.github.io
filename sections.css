@@ -27,9 +27,8 @@
 {
     #webdev
     {
-        top: 700px !important;
-        height: 1400px !important;
-        min-height: 1400px;
+        height: 1100px !important;
+        min-height: 1100px;
         /* top: 85% !important; */
         /* height: s170% !important; */
     }
@@ -58,17 +57,12 @@
         margin-left: 2%; */
     }
 }
+/* skinny sceen makes webdev even taller */
 @media screen and (max-width: 500px)
 {
     #webdev
     {
         min-height: 1400px !important;
-        
-        top: 700px !important;
-        /* top: 90% !important; */
-        height: 1400px !important;
-        /* height: 180% !important; */
-
     }
 }
 /* about me gets taller when view is short on width */
@@ -76,7 +70,7 @@
 {
     #about-me
     {
-        min-height: 600px !important;
+        min-height: 700px !important;
 
     }
 }
@@ -149,25 +143,21 @@
 
 .gray
 {
+    width: 100%;
+    clear: both;
+    float: left;
     min-height: 400px;
     background-color: rgb(230, 230, 230);
-    background-position: center;
-    background-size: cover;
     color: black;
     position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 
     /* Set a specific height */
 
     height: 40%;
 
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
     overflow: hidden;
 }
 
@@ -195,29 +185,24 @@
 
 .white
 {
+    width: 100%;
+    clear: both;
+    float: left;
     min-height: 400px;
     
     background-color: rgb(255, 255, 255);
 
 
-    background-position: center;
-    background-size: cover;
-
     color: black;
 
     position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 
     /* Set a specific height */
 
     height: 40%;
 
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     overflow: hidden;
     margin: 0px;
@@ -247,15 +232,16 @@
 
 #about-me
 {
+    clear: both;
+    float: left;
     min-height: 500px;
     height: 50%;
     /* top: 100px; */
-    margin-top: 64px;
 }
 
 #webdev
 {
-    top: 30%;
+    
     min-height: 600px;
     margin-bottom: 0px;
     height: 60%;

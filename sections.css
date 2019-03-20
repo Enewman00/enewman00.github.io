@@ -27,8 +27,8 @@
 {
     #webdev
     {
-        top: 70% !important;
-        height: 140% !important;
+        top: 85% !important;
+        height: 170% !important;
     }
     .gray-web
     {
@@ -59,6 +59,7 @@
 {
     #webdev
     {
+        min-height: 180% !important;
         top: 90% !important;
         height: 180% !important;
 
@@ -69,7 +70,6 @@
 {
     #about-me
     {
-        overflow: hidden !important;
         min-height: 600px !important;
 
     }

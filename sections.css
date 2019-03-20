@@ -57,21 +57,27 @@
         margin-left: 2%; */
     }
 }
-/* skinny sceen makes webdev even taller */
-@media screen and (max-width: 500px)
-{
-    #webdev
-    {
-        min-height: 1400px !important;
-    }
-}
+
 /* about me gets taller when view is short on width */
 @media screen and (max-width: 650px)
 {
     #about-me
     {
-        min-height: 700px !important;
+        clear: both;
+        min-height: 900px !important;
 
+    }
+}
+/* skinny sceen makes webdev even taller */
+@media screen and (max-width: 500px)
+{
+    #about-me
+    {
+        min-height: 1000px !important;
+    }
+    #webdev
+    {
+        min-height: 1400px !important;
     }
 }
 @media screen and (max-width: 600px)
@@ -234,7 +240,7 @@
 {
     clear: both;
     float: left;
-    min-height: 500px;
+    min-height: 700px;
     height: 50%;
     /* top: 100px; */
 }
@@ -292,9 +298,4 @@
 #webdev p
 {
     font-size: 1.4em;
-}
-
-.mouse-image
-{
-    top: -5%;
 }

@@ -162,8 +162,9 @@ textarea
 
 .white-button-container
 {
-    top: 670px;
-    position: absolute;
+    /* top: 670px; */
+    margin-top: 470px;
+    position: relative;
     float: left;
     height: auto;
     width: 100%;

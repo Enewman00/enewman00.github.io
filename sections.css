@@ -239,6 +239,8 @@
     color: black;
 }
 
+
+
 .white
 {
     width: 100%;
@@ -277,6 +279,50 @@
     text-align: center;
     color: black;
 }
+
+
+.black
+{
+    width: 100%;
+    clear: both;
+    float: left;
+    background-color: rgb(56, 56, 56);
+    color: black;
+    position: relative;
+    
+    
+    /* Set a specific height */
+    height: auto;
+
+    /* Position and center the image to scale nicely on all screens */
+
+    overflow: hidden;
+}
+
+.black h2
+{
+    font-size: 50px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: lighter;
+}
+.black p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.black-text
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+}
+.black a
+{
+    color: gray;
+}
+
 
 #contact-me
 {

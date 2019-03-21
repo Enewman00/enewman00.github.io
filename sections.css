@@ -91,9 +91,34 @@
 
 @media screen and (max-width: 900px)
 {
+    #about-me
+    {
+        background-attachment: scroll !important;
+        background-image: none !important;
+        background-size: auto !important;
+        color: white;
+    }
+
+    
+    .text-container
+    {
+        text-align: center !important;
+        float: none !important;
+        width: 90% !important;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .hero-image
     {
         background-size: 600px !important;
+    }
+}
+
+@media screen and (min-width: 901px)
+{
+    hr
+    {
+        background: black !important;
     }
 }
 
@@ -300,11 +325,13 @@ p
 
 .black-text
 {
-    width: 100%;
+    width: 90%;
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
     color: white;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .black a
 {
@@ -354,4 +381,58 @@ p
 #webdev p
 {
     font-size: 1.4em;
+}
+
+.left-image
+{
+    width: 300px;
+    height: auto;
+}
+
+.image-container
+{
+    margin-left: 60px;
+    float: right;
+}
+
+.text-container p
+{
+    font-size: 30px;
+    /* font-weight: bold; */
+}
+
+.text-container
+{
+    text-align: center;
+    float: left;
+    width: 40%;
+    /* background: #00a6c5; */
+    /* margin-left: 10px; */
+    margin-left: 5%
+}
+
+#about-me
+{
+    margin-bottom: 0px;
+    overflow: hidden;
+    /* min-height: 600px; */
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("pictures/face2.JPG");
+    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ),url("https://artelogic.net/uploads/mce/1539000190.jpg"); */
+    /* Set a specific height */
+    /* height: 60%; */
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-attachment: fixed;
+    
+    position: relative;
+}
+
+#contact-me-text
+{
+    margin-top: 105px;
+    margin-bottom: 105px;
 }

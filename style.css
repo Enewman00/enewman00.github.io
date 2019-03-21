@@ -173,7 +173,8 @@ textarea
 
 hr
 {
-    width: 90%;
+    margin: 0;
+    width: 100%;
     height: 1px;
     border: 0;
 }
@@ -189,30 +190,55 @@ hr
 }
 
 
-.color-line-shift
-{
+/* .color-line-shift
+{ */
     
-    background: #00a6c5;
-    -webkit-animation: line-shift 20s infinite;
+    /* background: #00a6c5; */
+    /* -webkit-animation: line-shift 20s infinite; */
 
+/* } */
+
+.gray-line
+{
+    background: gray;
 }
 
-#blue
+.blue-line
+{
+    background: #00a6c5;
+}
+
+.orange-line
+{
+    background: #dc7000;
+}
+
+.red-line
+{
+    background: #e9271b;
+}
+
+.pink-line
+{
+    background: #ff0fd7;
+}
+
+.blue-text
 {
     color: #00a6c5;
 }
 
-#orange
+.orange-text
 {
     color: #dc7000;
 }
 
-#red
+.red-text
 {
     color: #e9271b;
 }
 
-#pink
+.pink-text
 {
     color: #ff0fd7;
 }

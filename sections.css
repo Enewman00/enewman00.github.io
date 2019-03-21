@@ -88,6 +88,15 @@
         font-size: 35px !important;
     }
 }
+
+@media screen and (max-width: 900px)
+{
+    .hero-image
+    {
+        background-size: 600px !important;
+    }
+}
+
 .hero-image
 {
     overflow: hidden;

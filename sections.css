@@ -93,7 +93,7 @@
     overflow: hidden;
     min-height: 937px;
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), url("https://artelogic.net/uploads/mce/1539000190.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ),url("https://artelogic.net/uploads/mce/1539000190.jpg");
     /* Set a specific height */
     height: 100%;
 

@@ -171,10 +171,20 @@ textarea
     text-align: center;
 }
 
+
+.facts-list
+{
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+}
+
 hr
 {
-    margin: 0;
-    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     height: 1px;
     border: 0;
 }
@@ -241,4 +251,9 @@ hr
 .pink-text
 {
     color: #ff0fd7;
+}
+
+h3
+{
+    font-size: 20px;
 }

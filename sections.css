@@ -96,7 +96,11 @@
         background-attachment: scroll !important;
         background-image: none !important;
         background-size: auto !important;
-        color: white;
+        color: white !important;
+    }
+    #about-me-text
+    {
+        color: white !important;
     }
 
     
@@ -116,7 +120,7 @@
 
 @media screen and (min-width: 901px)
 {
-    hr
+    #dev-about, #about-contact
     {
         background: black !important;
     }
@@ -403,24 +407,29 @@ p
 
 .text-container
 {
+    color: white;
     text-align: center;
     float: left;
-    width: 40%;
+    width: 100%;
     /* background: #00a6c5; */
     /* margin-left: 10px; */
-    margin-left: 5%
+}
+
+#about-me-text
+{
+    margin-left: 5%;
+    width: 40%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: black;
 }
 
 #about-me
 {
+
     margin-bottom: 0px;
     overflow: hidden;
-    /* min-height: 600px; */
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: url("pictures/face2.JPG");
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ),url("https://artelogic.net/uploads/mce/1539000190.jpg"); */
-    /* Set a specific height */
-    /* height: 60%; */
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -435,4 +444,63 @@ p
 {
     margin-top: 105px;
     margin-bottom: 105px;
+}
+
+.resume-list-item
+{
+    text-align: left;
+}
+
+.text-left
+{
+    width: 50%;
+    float: left;
+}
+
+.text-right
+{
+    width: 50%;
+    clear: right;
+    float: left;
+}
+
+.block-row
+{
+    width: 100%;
+    clear: both;
+    float: left;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#download-resume-container
+{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#download-resume
+{
+    color: white;
+}
+
+.resume-list
+{
+    padding-left: 30px;
+    margin-top: 0;
+}
+
+.resume-list-item
+{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.text-left h3
+{
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    font-size: 25px;
 }

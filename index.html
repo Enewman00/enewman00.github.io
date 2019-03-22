@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sections.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro|Playfair+Display|Oswald|Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro|Oswald|Abel" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/button.js"></script>
     <title>
@@ -27,6 +27,7 @@
             <!-- <a href="#home" class="navigation-bar">Home</a> -->
             <a href="#webdev" class="navigation-bar" id="nav-dev">Development</a>
             <a href="#about-me" class="navigation-bar" id="nav-about">About Me</a>
+            <a href="#skills" class="navigation-bar" id="nav-resume">Resume</a>
             <a href="#contact-me" class="navigation-bar" id="nav-contact">Contact me</a>
             <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
                 <i class="fa fa-bars"></i>
@@ -95,13 +96,13 @@
     </div>
 </section>
 
-<hr class="pink-line">
+<hr class="pink-line" id="dev-about">
 
 <!--about me-->
 <section class="black" id="about-me">
-    <div class="text-container">
+    <div class="text-container" id="about-me-text">
         <h2>
-            About Me
+            Who am I?
         </h2>
         <p>
             I'm a student at the University of Texas at Dallas, majoring in computer science.
@@ -110,13 +111,54 @@
         <p>
             Aside from the programming side of things, I enjoy reading, hanging out with my
             dogs, and spending time with family.
-
         </p>
-        
     </div>
 </section>
 
-<hr class="blue-line">
+<hr class="blue-line" id="about-contact">
+
+
+<section class="black" id="skills">
+    <div class="text-container">
+        <h2>Skills</h2>
+        <div class="block-row">
+            <div class="text-left">
+                <h3>Languages</h3>
+            </div>
+            <div class="text-right">
+                <ul class="resume-list">
+                    <li class="resume-list-item">Java</li>
+                    <li class="resume-list-item">C++</li>
+                    <li class="resume-list-item">HTML</li>
+                    <li class="resume-list-item">CSS</li>
+                    <li class="resume-list-item">Javascript</li>
+                    <li class="resume-list-item">Scala (limited)</li>
+                    <li class="resume-list-item">Swift (limited)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block-row">
+            <div class="text-left">
+                <h3>Tools</h3>
+            </div>
+            <div class="text-right">
+                <ul class="resume-list">
+                    <li class="resume-list-item">Git</li>
+                    <li class="resume-list-item">Bash</li>
+                    <li class="resume-list-item">Travis CI</li>
+                    <li class="resume-list-item">Experience with Docker and Rancher</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="white-button-container" id="download-resume-container">
+            <a class="white-button" id="download-resume" href="https://docs.google.com/document/d/120UgA3Ls7wCV8hnWGDYdIvPKPbyyymzoFofwCf4GAaA/edit?usp=sharing">Get Full Resume</a>
+        </div>
+    </div>
+</section>
+
+<hr class="red-line">
 
 <!--contact me-->
 <section class="black" id="contact-me">

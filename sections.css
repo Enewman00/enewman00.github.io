@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 900px)
+@media screen and (max-aspect-ratio: 4/5)
 {
     #about-me
     {
@@ -102,6 +102,60 @@
     {
         color: white !important;
     }
+
+    .abouttext-left
+    {
+        margin-left: 2%;
+        width: 30%;
+        /* margin-bottom: 50px; */
+        /* margin-top: 50px; */
+        /* float: left; */
+        /* display: inline-block; */
+    }
+
+    .abouttext-right
+    {
+        margin-right: 2%;
+        width: 30%;
+        /* margin-bottom: 50px; */
+        /* margin-top: 50px; */
+        /* float: left; */
+        /* display:inline-block; */
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .abouttext-left
+    {
+        /* margin-left: 2%; */
+        width: 100% !important;
+        /* margin-bottom: 50px; */
+        /* margin-top: 50px; */
+        float: none !important;
+        display: block ;
+    }
+
+    .abouttext-right
+    {
+        /* margin-right: 2%; */
+        width: 100% !important;
+        /* margin-bottom: 50px; */
+        /* margin-top: 50px; */
+        float: none !important;
+        display: block;
+    }
+    #about-me
+    {
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("pictures/face3.JPG");
+        /* background-attachment: scroll !important;
+        background-image: none !important;
+        background-size: auto !important;
+        color: white !important; */
+    }
+    /* #about-me-text
+    {
+        color: white !important;
+    } */
 
     
     .text-container
@@ -415,29 +469,50 @@ p
     /* margin-left: 10px; */
 }
 
-#about-me-text
+#about-me-text p
 {
-    margin-left: 5%;
-    width: 40%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    color: black;
+    /* margin-left: 5%; */
+    /* width: 100%; */
+    /* margin-bottom: 50px; */
+    /* margin-top: 50px; */
+    color: white;
+}
+
+.abouttext-left
+{
+    margin-left: 2%;
+    width: 30%;
+    /* margin-bottom: 50px; */
+    /* margin-top: 50px; */
+    float: left;
+    /* display: inline-block; */
+}
+
+.abouttext-right
+{
+    margin-right: 2%;
+    width: 30%;
+    /* margin-bottom: 50px; */
+    /* margin-top: 50px; */
+    float: right;
+    /* display:inline-block; */
 }
 
 #about-me
 {
-
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("pictures/face3.JPG");
     margin-bottom: 0px;
     overflow: hidden;
-    background-image: url("pictures/face2.JPG");
-
+    height: auto;
+    /* width: 100%; */
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 1920px;
+    background-size: 100%;
     background-attachment: fixed;
-    
     position: relative;
+    margin: auto;
+
 }
 
 #contact-me-text

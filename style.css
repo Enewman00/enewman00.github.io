@@ -72,7 +72,7 @@ textarea
 @-webkit-keyframes contact-animation
 {
     0%  {border-color: #00a6c5;}
-    33% {border-color: #dc7000;}
+    25% {border-color: #dc7000;}
     50% {border-color: #e9271b;}
     75% {border-color: rgb(255, 15, 215);}
     100%{border-color: #00a6c5;}
@@ -125,7 +125,7 @@ textarea
     }
 }
 
-#nav-dev:hover, #nav-contact:hover, #nav-about:hover
+#nav-dev:hover, #nav-contact:hover, #nav-about:hover, #nav-resume:hover
 {
     color: gray;
     -webkit-animation: nav-animation-in .3s;
@@ -193,7 +193,7 @@ hr
 {
     
     0%  {background: #00a6c5;}
-    33% {background: #dc7000;}
+    25% {background: #dc7000;}
     50% {background: #e9271b;}
     75% {background: rgb(255, 15, 215);}
     100%{background: #00a6c5;}

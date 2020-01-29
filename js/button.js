@@ -10,3 +10,4 @@ function navigationBar()
         bar.className = "header-navigation";
     }
 }
+

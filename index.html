@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="sections.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Source+Sans+Pro|Oswald|Abel|Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
     <title>
         Ethan Newman's Personal Site
     </title>
@@ -37,7 +39,7 @@
     <!-- </header> -->
 
     <!-- Inspired by https://codepen.io/yoannhel/pen/sJpDj -->
-    <div class="hero-text">
+    <!-- <div class="hero-text">
         <p id="hello-text"><i>Hello, I'm</i></p>
         <div class="content">
             <div class="content__container">
@@ -52,11 +54,20 @@
                 </ul>
             </div>
             
-            <!-- <h1>Ethan Newman</h1> -->
+            
         </div>
         <div class="white-button-container">
             <a class="white-button" href="#contact-me">Contact me</a>
         </div>
+    </div> -->
+    <div class="hero-text">
+        <p id="hello-text"><i>Hello, I'm</i></p>
+        <h1>
+            <a class="typewrite" data-period="2000" data-type='[ "Ethan Newman", "A Student", "A Developer", "A Nerd" ]'>
+              <span class="wrap"></span>
+            </a>
+        </h1>
+
     </div>
     
 </section>
@@ -100,6 +111,13 @@
 </section>
 
 <hr class="pink-line" id="dev-about">
+<div class="panel" data-color="red">
+    <h2>Color shift - red</h2>
+</div>
+<div class="panel" data-color="blue">
+    <h2>Color shift - blue</h2>
+</div>
+
 
 <!--about me-->
 <section class="black" id="about-me">

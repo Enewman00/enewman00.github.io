@@ -4,7 +4,10 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: black;
+    color: #000;
+    /* background-color: #f4f4f4; */
+    transition: background-color 1s ease;
+    /* background-color: black; */
 }
 
 h1
@@ -256,4 +259,31 @@ hr
 h3
 {
     font-size: 20px;
+}
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+
+
+.color-blue
+{
+    background-color: #aeabb4;
+}
+
+.color-red
+{
+    background-color: #dc5452;
+}
+
+.color-black
+{
+    background-color: #000000;
 }

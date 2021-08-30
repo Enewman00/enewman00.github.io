@@ -1,6 +1,5 @@
 //inspired by https://codepen.io/daveredfern/pen/zBGBJV
 $(window).scroll(function() {
-  
     // selectors
     var $window = $(window),
         $body = $('body'),

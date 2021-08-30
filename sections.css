@@ -151,7 +151,7 @@
     }
     #about-me
     {
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("pictures/face3.JPG");
+        /* background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("pictures/face3.JPG"); */
         /* background-attachment: scroll !important;
         background-image: none !important;
         background-size: auto !important;
@@ -505,7 +505,7 @@ p
 
 #about-me
 {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("pictures/face3.JPG");
+    /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("pictures/face3.JPG"); */
     margin-bottom: 0px;
     overflow: hidden;
     height: auto;

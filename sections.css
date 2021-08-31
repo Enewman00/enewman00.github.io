@@ -304,7 +304,7 @@
     clear: both;
     float: left;
     background-color: rgb(230, 230, 230);
-    color: black;
+    /* color: black; */
     position: relative;
     
     
@@ -334,7 +334,7 @@
     float: left;
     
     background-color: rgb(255, 255, 255);
-    color: black;
+    /* color: black; */
     /* Set a specific height */
 
     height: auto;
@@ -360,7 +360,7 @@
     width: 100%;
     clear: both;
     float: left;
-    background-color: black;
+    /* background-color: black; */
     color: black;
     position: relative;
     

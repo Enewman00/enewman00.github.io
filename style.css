@@ -204,6 +204,16 @@ hr
     100%{background: #00a6c5;}
 }
 
+.dev-left
+{
+    float: left;
+}
+
+.dev-right
+{
+    float: right;
+}
+
 
 /* .color-line-shift
 { */

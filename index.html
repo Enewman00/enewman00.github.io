@@ -27,9 +27,9 @@
     <!-- <header class="header-top"> -->
         <nav class="header-navigation" id="top-navigation">
             <!-- <a href="#home" class="navigation-bar">Home</a> -->
-            <a href="#webdev" class="navigation-bar" id="nav-dev">Development</a>
             <a href="#about-me" class="navigation-bar" id="nav-about">About Me</a>
             <a href="#skills" class="navigation-bar" id="nav-resume">Resume</a>
+            <a href="#webdev" class="navigation-bar" id="nav-dev">Development</a>
             <a href="#contact-me" class="navigation-bar" id="nav-contact">Contact me</a>
             <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
                 <i class="fa fa-bars"></i>
@@ -50,57 +50,8 @@
     
 </section>
 
-<!--Under banner, Gives info about my web dev-->
-<section class="black panel" id="webdev" data-color="black" >
-    <div class="black-text">
-        <h2 class="fadeIn">Development</h2>
-        <div class="gray-web fadeIn">
-            <img src="icons/computer.png">
-            <h4>
-                Websites
-            </h4>
-            <p>
-                In my free time I enjoy designing and creating websites. I've got a couple under my belt. One of them is (obviously) the one you are viewing now.
-                Another one I created, affectionately named "<a href="https://enewman00.github.io/skyNet">Sky Net</a>", is a weather website. The user types in a city and information about the weather is
-                shown, as well as a corresponding background video.
-            </p>
-        </div>
-        <div class="gray-app fadeIn">
-            <img src="icons/phone.png">
-            <h4>
-                Apps
-            </h4>
-            <p>
-                I also have created a couple mobile apps. I've programmed some basic apps for both iOS and Android because I wanted to get familiar with the respective technologies!
-            </p>
-        </div>
-        <div class="gray-other fadeIn">
-            <img src="icons/mouse.png">
-            <h4>
-                Other
-            </h4>
-            <p>
-                I program in Java and C++ for most of my school work. My favorite course so far was "Data Structures and Algorithms", where I 
-                implemented a linked list, binary tree, hash table, and a quick sort in Java. 
-                You can find one of my Java projects <a href="https://github.com/Enewman00/JavaQuickSortVariations">here</a>.
-            </p>
-        </div>
-    </div>
-</section>
 
-<!-- <div class="panel" data-color="black">
-    <h2>Color shift - black</h2>
-</div>
-<div class="panel" data-color="red">
-    <h2>Color shift - red</h2>
-</div>
-<div class="panel" data-color="blue">
-    <h2>Color shift - blue</h2>
-</div> -->
-
-
-<!--about me-->
-<section class="black panel" data-color="blue" id="about-me">
+<section class="black panel" data-color="black" id="about-me">
     <div class="text-container" id="about-me-text">
         <h2 class="fadeIn">
             Who am I?
@@ -125,7 +76,10 @@
 
 
 
-<section class="black" id="skills">
+
+
+
+<section class="black panel" id="skills" data-color="blue">
     <div class="text-container">
         <h2>Skills</h2>
         <div class="block-row">
@@ -166,6 +120,44 @@
     </div>
 </section>
 
+
+<!--Under banner, Gives info about my web dev-->
+<section class="black panel" id="webdev" data-color="blue" >
+    <div class="black-text">
+        <h2 class="fadeIn">Work</h2>
+        <div class="gray-web fadeIn">
+            <h4>
+                Websites
+            </h4>
+            <img src="icons/computer.png" class="dev-left">
+            <p>
+                In my free time I enjoy designing and creating websites. I've got a couple under my belt. One of them is (obviously) the one you are viewing now.
+                Another one I created, affectionately named "<a href="https://enewman00.github.io/skyNet">Sky Net</a>", is a weather website. The user types in a city and information about the weather is
+                shown, as well as a corresponding background video.
+            </p>
+        </div>
+        <div class="gray-app fadeIn">
+            <h4>
+                Apps
+            </h4>
+            <img src="icons/phone.png" class="dev-right">
+            <p>
+                I also have created a couple mobile apps. I've programmed some basic apps for both iOS and Android because I wanted to get familiar with the respective technologies!
+            </p>
+        </div>
+        <div class="gray-other fadeIn">
+            <h4>
+                Other
+            </h4>
+            <img src="icons/mouse.png" class="dev-left">
+            <p>
+                I program in Java and C++ for most of my school work. My favorite course so far was "Data Structures and Algorithms", where I 
+                implemented a linked list, binary tree, hash table, and a quick sort in Java. 
+                You can find one of my Java projects <a href="https://github.com/Enewman00/JavaQuickSortVariations">here</a>.
+            </p>
+        </div>
+    </div>
+</section>
 
 
 <!--contact me-->

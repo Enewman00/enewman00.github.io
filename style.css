@@ -149,11 +149,13 @@ textarea
 .white-button
 {
     
-    border: 2px solid #ffffff;
+    border-radius: 40px;
     -webkit-animation: contact-animation-out .3s;
 
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
+    background-color: rgb(9, 141, 204);
+    box-shadow: 0 12px 21px -11px rgba(0,0,0,.5);
+    
+    color: white !important;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -280,7 +282,8 @@ h3
 
 .color-red
 {
-    background-color: #e9b9e1;
+    /* background-color: #e9b9e1; */
+    background-color: #956daf;
 }
 
 .color-orange

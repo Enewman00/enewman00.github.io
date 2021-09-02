@@ -191,7 +191,7 @@
     min-height: 937px;
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: -webkit-linear-gradient(transparent 50%, transparent, black ), -webkit-linear-gradient(right, transparent 50%, transparent, black ), url("https://artelogic.net/uploads/mce/1539000190.jpg");
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ),url("https://artelogic.net/uploads/mce/1539000190.jpg"); */
+    /* background-image: url("pictures/laptop2.png"); */
     /* Set a specific height */
     height: 100%;
 
@@ -375,7 +375,8 @@
 
 h2
 {
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 80px;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
 }
@@ -440,7 +441,10 @@ p
     font-weight: normal;
     font-size: 25px;
 }
-
+#webdev
+{
+    margin-top: 250px;
+}
 #webdev p
 {
     font-size: 1.4em;

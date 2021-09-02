@@ -1,4 +1,5 @@
 //inspired by https://codepen.io/daveredfern/pen/zBGBJV
+//change background color on scroll
 $(window).scroll(function() {
     // selectors
     var $window = $(window),
@@ -27,3 +28,59 @@ $(window).scroll(function() {
     });    
     
   }).scroll();
+
+
+//fade out on scroll out of frame
+$(window).scroll(function() {
+  // Setting: Start fading halfway up the page
+  var startPos = 0.5;
+
+  // Cache window object
+  var $w = $(window);
+
+  // Basically, we go through each element and check its relative position within the viewport
+  $('.fadeOut').each(function() {
+
+    // Get current relative position in viewport, based on the top edge
+    var pos = $(this).offset().top - $w.scrollTop();
+
+    // Get viewport height
+    var vh = $w.height();
+
+    if (pos < vh * startPos) {
+      // If element has past the starting threshold, we fade it
+      $(this).css('opacity', pos / (vh * startPos) * 1);
+    } else {
+      $(this).css('opacity', 1);
+    }
+  });
+});
+
+
+//fade in on scroll into frame
+$(window).scroll(function() {
+  // Setting: start fading in at bottom of page
+  var startPos = 0.5;
+
+  // Cache window object
+  var $w = $(window);
+
+  // Basically, we go through each element and check its relative position within the viewport
+  $('.fadeIn').each(function() {
+
+    // Get current relative position in viewport, based on the top edge
+    var pos = $(this).offset().top - $w.scrollTop();
+
+    // Get viewport height
+    var vh = $w.height();
+    console.log("Pos: " + (vh - pos) + ", vh: " + vh + ", startPos: " + startPos);
+    //console.log(pos / (vh * startPos));
+    if (pos > vh * startPos) {
+      $(this).css('opacity', (vh - pos) / (vh * (1 - startPos)) );
+      
+    } else {
+      // If element has past the starting threshold, we fade it
+      $(this).css('opacity', 1);
+    }
+  });
+});

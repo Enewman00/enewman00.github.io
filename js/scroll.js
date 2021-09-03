@@ -46,8 +46,6 @@ $(window).scroll(function() {
 
     // Get viewport height
     var vh = $w.height();
-    console.log("Pos: " + (vh - pos) + ", vh: " + vh + ", startPos: " + startPos);
-    //console.log(pos / (vh * startPos));
     if (pos > vh * startPos) {
       $(this).css('opacity', (vh - pos) / (vh * (1 - startPos)) );
       

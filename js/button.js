@@ -61,8 +61,7 @@ TxtType.prototype.tick = function() {
 
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
-    var test = elements[0].style.color = colors[0];
-    console.log(test);
+    elements[0].style.color = colors[0];
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');

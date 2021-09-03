@@ -151,7 +151,7 @@
     }
     #about-me
     {
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("pictures/face3.JPG");
+        /* background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("pictures/face3.JPG"); */
         /* background-attachment: scroll !important;
         background-image: none !important;
         background-size: auto !important;
@@ -191,7 +191,7 @@
     min-height: 937px;
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: -webkit-linear-gradient(transparent 50%, transparent, black ), -webkit-linear-gradient(right, transparent 50%, transparent, black ), url("https://artelogic.net/uploads/mce/1539000190.jpg");
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ), -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,0), rgba(0, 0, 0, 1) ),url("https://artelogic.net/uploads/mce/1539000190.jpg"); */
+    /* background-image: url("pictures/laptop2.png"); */
     /* Set a specific height */
     height: 100%;
 
@@ -304,7 +304,7 @@
     clear: both;
     float: left;
     background-color: rgb(230, 230, 230);
-    color: black;
+    /* color: black; */
     position: relative;
     
     
@@ -334,7 +334,7 @@
     float: left;
     
     background-color: rgb(255, 255, 255);
-    color: black;
+    /* color: black; */
     /* Set a specific height */
 
     height: auto;
@@ -360,7 +360,7 @@
     width: 100%;
     clear: both;
     float: left;
-    background-color: black;
+    /* background-color: black; */
     color: black;
     position: relative;
     
@@ -375,7 +375,8 @@
 
 h2
 {
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 80px;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
 }
@@ -383,7 +384,7 @@ p
 {
     font-family: 'Abel', sans-serif;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .black-text
@@ -398,7 +399,7 @@ p
 }
 .black a
 {
-    color: gray;
+    color: rgb(14, 2, 70);
 }
 
 .gray-web
@@ -406,23 +407,25 @@ p
     margin-right: 2%;
     margin-left: 2%;
     float: left;
-    width: 29%;
+    width: 75%;
+    margin-bottom: 5%;
 }
 
 
 .gray-app
 {
-    width: 29%;
-    float:left;
+    width: 75%;
+    float: right;
 
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 5%;
 }
 
 .gray-other
 {
     float: left;
-    width: 29%;
+    width: 75%;
     margin-right: 2%;
     margin-left: 2%;
     margin-bottom: 150px;
@@ -439,6 +442,10 @@ p
 {
     font-weight: normal;
     font-size: 25px;
+}
+#skills
+{
+    margin-top: 100px;
 }
 
 #webdev p
@@ -474,14 +481,36 @@ p
     /* margin-left: 10px; */
 }
 
+
 #about-me-text p
 {
     /* margin-left: 5%; */
     /* width: 100%; */
     /* margin-bottom: 50px; */
     /* margin-top: 50px; */
+    margin-left: 15%;
+    margin-right: 15%;
     color: white;
 }
+
+@media screen and (max-width: 600px)
+{
+    #about-me-text p
+    {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (min-width: 1300px)
+{
+    #about-me-text p
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 
 .abouttext-left
 {
@@ -505,7 +534,7 @@ p
 
 #about-me
 {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("pictures/face3.JPG");
+    /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("pictures/face3.JPG"); */
     margin-bottom: 0px;
     overflow: hidden;
     height: auto;
@@ -533,8 +562,17 @@ p
 
 .text-left
 {
-    width: 50%;
+    width: 30%;
     float: left;
+    padding-left: 20%;
+}
+@media screen and (max-width: 750px)
+{
+    .text-left
+    {
+        width: 50%;
+        padding-left: 0;
+    }
 }
 
 .text-right

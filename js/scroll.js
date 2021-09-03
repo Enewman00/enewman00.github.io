@@ -30,37 +30,10 @@ $(window).scroll(function() {
   }).scroll();
 
 
-//fade out on scroll out of frame
-$(window).scroll(function() {
-  // Setting: Start fading halfway up the page
-  var startPos = 0.5;
-
-  // Cache window object
-  var $w = $(window);
-
-  // Basically, we go through each element and check its relative position within the viewport
-  $('.fadeOut').each(function() {
-
-    // Get current relative position in viewport, based on the top edge
-    var pos = $(this).offset().top - $w.scrollTop();
-
-    // Get viewport height
-    var vh = $w.height();
-
-    if (pos < vh * startPos) {
-      // If element has past the starting threshold, we fade it
-      $(this).css('opacity', pos / (vh * startPos) * 1);
-    } else {
-      $(this).css('opacity', 1);
-    }
-  });
-});
-
-
 //fade in on scroll into frame
 $(window).scroll(function() {
   // Setting: start fading in at bottom of page
-  var startPos = 0.5;
+  var startPos = 0.6;
 
   // Cache window object
   var $w = $(window);

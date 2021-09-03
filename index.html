@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body class="color-black">
 
 
 
@@ -28,8 +28,8 @@
         <nav class="header-navigation" id="top-navigation">
             <!-- <a href="#home" class="navigation-bar">Home</a> -->
             <a href="#about-me" class="navigation-bar" id="nav-about">About Me</a>
-            <a href="#skills" class="navigation-bar" id="nav-resume">Resume</a>
-            <a href="#webdev" class="navigation-bar" id="nav-dev">Development</a>
+            <a href="#skills" class="navigation-bar" id="nav-resume">Skills</a>
+            <a href="#webdev" class="navigation-bar" id="nav-dev">Experience</a>
             <a href="#contact-me" class="navigation-bar" id="nav-contact">Contact me</a>
             <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
                 <i class="fa fa-bars"></i>
@@ -56,19 +56,17 @@
         <h2 class="fadeIn">
             Who am I?
         </h2>
-        <p class="abouttext-left">
-            I'm a student at the University of Texas at Dallas, majoring in computer science.
-            I'm extremely passionate about exploring new paths of software development at every opportunity I get. 
-            <br><br>
-            I took my first computer science course in high school and I immediately knew I wanted to purse a career in it! 
-            My very first programming language was Java, but I love learning about new languages and technologies. 
+        <p class="fadeIn">
+            I'm a student at the University of Texas at Dallas, majoring in computer science and graduating in December 2021.
+            I'm passionate about exploring new paths of software development at every opportunity I get. 
         </p>
-        <p class="abouttext-right">
-            Aside from the programming side of things, I enjoy reading, watching movies and tv shows, loving on my
-            dogs, and spending time with my friends and family.
-            <br><br>
-            A couple fun facts about me: I'm a twin. I have 2 very fluffy dogs (both are Cavalier King Charles Spaniels).
-            To see pictures of them, you'll have to hire me &#128521
+        <p class="fadeIn">
+            I took my first computer science course in high school and I immediately knew I wanted to purse a career in it. 
+            My very first programming language was Java, and I haven't stopped learning new languages and technologies since. 
+        </p>
+        <p class="fadeIn">
+            Aside from the programming side of things, I enjoy reading, loving on my
+            dogs (hire me for pictures of them&#128521), and spending time with my friends and family.
         </p>
     </div>
 </section>
@@ -81,34 +79,34 @@
 
 <section class="black panel" id="skills" data-color="blue">
     <div class="text-container">
-        <h2>Skills</h2>
+        <h2 class="fadeIn">Skills</h2>
         <div class="block-row">
             <div class="text-left">
-                <h3>Languages</h3>
+                <h3 class="fadeIn">Languages</h3>
             </div>
             <div class="text-right">
-                <ul class="resume-list">
-                    <li class="resume-list-item">Java</li>
-                    <li class="resume-list-item">C++</li>
+                <ul class="resume-list fadeIn">
                     <li class="resume-list-item">C#</li>
+                    <li class="resume-list-item">C++</li>
+                    <li class="resume-list-item">Java</li>
                     <li class="resume-list-item">HTML</li>
                     <li class="resume-list-item">CSS</li>
-                    <li class="resume-list-item">Javascript</li>
+                    <li class="resume-list-item">Javascript (limited)</li>
                     <li class="resume-list-item">Python (limited)</li>
                     <li class="resume-list-item">Scala (limited)</li>
-                    <li class="resume-list-item">Swift (limited)</li>
                 </ul>
             </div>
         </div>
         <div class="block-row">
             <div class="text-left">
-                <h3>Tools</h3>
+                <h3 class="fadeIn">Technologies</h3>
             </div>
             <div class="text-right">
-                <ul class="resume-list">
+                <ul class="resume-list fadeIn">
+                    <li class="resume-list-item">Relational Databases</li>
                     <li class="resume-list-item">Git</li>
+                    <li class="resume-list-item">OpenCV</li>
                     <li class="resume-list-item">Bash</li>
-                    <li class="resume-list-item">Travis CI</li>
                 </ul>
             </div>
         </div>
@@ -124,37 +122,40 @@
 <!--Under banner, Gives info about my web dev-->
 <section class="black panel" id="webdev" data-color="blue" >
     <div class="black-text">
-        <h2 class="fadeIn">Work</h2>
-        <div class="gray-web fadeIn">
-            <h4>
-                Websites
-            </h4>
-            <img src="icons/computer.png" class="dev-left">
-            <p>
-                In my free time I enjoy designing and creating websites. I've got a couple under my belt. One of them is (obviously) the one you are viewing now.
-                Another one I created, affectionately named "<a href="https://enewman00.github.io/skyNet">Sky Net</a>", is a weather website. The user types in a city and information about the weather is
-                shown, as well as a corresponding background video.
-            </p>
+        <div class="text-div fadeIn">
+            <h2>Experience</h2>
+            
         </div>
-        <div class="gray-app fadeIn">
-            <h4>
-                Apps
-            </h4>
-            <img src="icons/phone.png" class="dev-right">
-            <p>
-                I also have created a couple mobile apps. I've programmed some basic apps for both iOS and Android because I wanted to get familiar with the respective technologies!
-            </p>
-        </div>
-        <div class="gray-other fadeIn">
-            <h4>
-                Other
-            </h4>
-            <img src="icons/mouse.png" class="dev-left">
-            <p>
-                I program in Java and C++ for most of my school work. My favorite course so far was "Data Structures and Algorithms", where I 
-                implemented a linked list, binary tree, hash table, and a quick sort in Java. 
-                You can find one of my Java projects <a href="https://github.com/Enewman00/JavaQuickSortVariations">here</a>.
-            </p>
+        <div class="container fadeIn">
+            <div class="image-cards">
+                <div class="card-column">
+                    <img src="pictures/tyler.png" alt="the tyler technologies logo" class="photos left-photo" id="tyler-photo">
+                    <div class="card-text-div">
+                        <h4 class="card-title">Tyler Technologies</h4>
+                        <p>I've spent the last two summers at Tyler Technologies as a Software Development Intern. I did multiple projects working on .NET applications, including full stack
+                            development of a web application managing project requests from clients.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card-column">
+                    <img src="pictures/alegion.png" alt="the alegion logo" class="photos left-photo" id="alegion-photo">
+                    <div class="card-text-div">
+                        <h4 class="card-title">Alegion</h4>
+                        <p>At Alegion I developed a program to automatically send slack and email alerts to alert workers of task perfomance. 
+                            I also wrote python scripts for JSON file manipulation, and wrote SQL queries to be used for data visualization.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card-column">
+                    <img src="pictures/clockwork.png" alt="The clockwork solutions logo" class="photos" id="clockwork-photo">
+                    <div class="card-text-div">
+                        <h4 class="card-title">Clockwork Solutions</h4>
+                        <p>At Clockwork Solutions I took the role of DevOps Intern, completing projects including writing a program in Scala to compare and synchronize local files to AWS S3 buckets.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

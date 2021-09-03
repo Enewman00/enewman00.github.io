@@ -384,7 +384,7 @@ p
 {
     font-family: 'Abel', sans-serif;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .black-text
@@ -399,7 +399,7 @@ p
 }
 .black a
 {
-    color: gray;
+    color: rgb(14, 2, 70);
 }
 
 .gray-web
@@ -443,10 +443,11 @@ p
     font-weight: normal;
     font-size: 25px;
 }
-#webdev
+#skills
 {
     margin-top: 100px;
 }
+
 #webdev p
 {
     font-size: 1.4em;
@@ -480,14 +481,36 @@ p
     /* margin-left: 10px; */
 }
 
+
 #about-me-text p
 {
     /* margin-left: 5%; */
     /* width: 100%; */
     /* margin-bottom: 50px; */
     /* margin-top: 50px; */
+    margin-left: 15%;
+    margin-right: 15%;
     color: white;
 }
+
+@media screen and (max-width: 600px)
+{
+    #about-me-text p
+    {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (min-width: 1300px)
+{
+    #about-me-text p
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 
 .abouttext-left
 {
@@ -539,8 +562,17 @@ p
 
 .text-left
 {
-    width: 50%;
+    width: 30%;
     float: left;
+    padding-left: 20%;
+}
+@media screen and (max-width: 750px)
+{
+    .text-left
+    {
+        width: 50%;
+        padding-left: 0;
+    }
 }
 
 .text-right
